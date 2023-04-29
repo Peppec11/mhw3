@@ -1,0 +1,413 @@
+body {
+    background: rgb(255, 64, 64);
+    background: linear-gradient(0deg, rgba(255, 64, 64, 1) 7%, rgba(255, 64, 102, 1) 51%, rgba(255, 241, 106, 1) 88%);
+    margin: 0px;
+
+}
+
+
+/*Layout menu*/
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 75px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.menu:hover {
+    border: solid 0.8px white;
+    box-shadow: 0 0 5px rgb(218, 218, 218), 0 0 25px rgb(221, 221, 221), 0 0 50px rgb(252, 251, 251);
+    transition: .3s;
+    border-radius: 10px;
+
+}
+
+
+
+/*Layout testata*/
+
+header {
+    position: relative;
+    height: 500px;
+    background-image: url(img/copertina.jpg);
+    background-size: cover;
+    z-index: -2;
+    display: grid;
+    place-items: center;
+    box-shadow: 70px 0px 50px black;
+
+
+}
+
+#overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#Titolo {
+    font-style: italic;
+    color: white;
+    text-shadow: 10px 10px 50px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: inherit;
+
+
+
+}
+
+/*Layout utente*/
+
+.Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+#utente {
+
+    display: flex;
+    color: black;
+    flex-direction: column;
+    margin-top: -50px;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: solid 2px black;
+
+}
+
+
+#img_utente {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#nome_utente {
+    display: flex;
+
+}
+
+/*Layout Articoli della pagina*/
+
+.centrale {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+
+}
+
+.Corpo {
+    color: black;
+    background-color: #ffcc3d;
+    display: flex;
+    flex-direction: column;
+    width: 66.67%;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 10px;
+
+}
+
+p {
+
+    display: inline-flex;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.commento {
+    color: rgba(255, 64, 102, 1);
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+.numero {
+    color: black;
+
+}
+
+
+section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.paragrafo {
+    margin-left: 40px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+}
+
+.titolo_Paragrafo {
+    margin-bottom: 0;
+
+}
+
+.Voto {
+    color: rgba(255, 64, 102, 1);
+    font-size: 14px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.macchina {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    box-shadow: 10px 10px 50px #b68706;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+
+/*Layout Footer*/
+
+footer {
+    margin-top: 120px;
+    background-color: #ffcc3d;
+    color: rgba(255, 64, 102, 1);
+    height: 75px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+
+}
+
+.Backtop {
+    color: white;
+    background-color: transparent;
+    border: 0.8px solid white;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+
+
+
+}
+
+.Backtop:hover {
+    background-color: rgba(255, 241, 106, 1);
+    color: goldenrod;
+    transition: .6s;
+    box-shadow: 0 0 5px rgba(255, 241, 106, 1), 0 0 25px rgb(252, 234, 78), 0 0 50px rgb(248, 228, 43)
+}
+
+/*Side bar*/
+aside {
+    position: relative;
+    right: 10px;
+    background-color: #ffcc3d;
+    width: 25%;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+aside img {
+
+    margin-top: 5px;
+    width: 50%;
+
+
+
+}
+
+.ads {
+    width: fit-content;
+
+    background-color: rgba(255, 241, 106, 1);
+    border: solid 2px #b68706;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    color: rgba(255, 64, 102, 1);
+}
+
+.ads:hover {
+    background-color:  rgba(255, 64, 102, 1);
+    color:  rgba(255, 241, 106, 1);;
+}
+
+/*Pubblicita la api senza Oauth 2 */
+.ads2 {
+    position: fixed;
+    bottom: 0;
+    width: 66%;
+    height: fit-content;
+    background-color:  rgba(255, 240, 106, 0.848);
+    border: solid 2px  #b68706;
+    align-items: center;
+    text-align: center;
+    
+    }
+.ads2 p{
+    font-size: xx-large;
+    font-weight: 600;
+    color: red ;
+    width: fit-content;
+    text-align: center;
+}
+.x{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: x-large;
+    position:absolute;
+    right: 0;
+    height:fit-content ;
+   
+    width: fit-content;
+    
+    
+    
+}
+.x img{
+ width: 20px;
+}
+   
+
+.x:hover{
+    
+    
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.sales{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    color: black;
+}
+.square{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: fit-content;
+    background: linear-gradient(0deg, rgba(255, 64, 64, 1) 7%, rgba(255, 64, 102, 1) 51%, rgba(255, 241, 106, 1) 88%);
+    margin-bottom: 5px;
+    border: solid 3px red;
+    border-radius: 5px;
+}
+
+.square img{
+    width: 50% ;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.prezzo{
+    color: green;
+    background-color: greenyellow;
+    border: solid 2px green;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+/*Adattameto al telefono*/
+
+@media (max-width:600px) {
+    * {
+        font-size: calc(60px, -10%);
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .macchina {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        box-shadow: 10px 10px 20px gray;
+        border-radius: 20px;
+
+    }
+
+    header {
+        position: relative;
+        height: 500px;
+
+        background-size: cover;
+        z-index: -2;
+        display: grid;
+        place-items: center;
+
+
+    }
+
+    #overlay {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+    .ads2 p{
+        font-size: large;
+      
+        text-align: center;
+    }
+}
